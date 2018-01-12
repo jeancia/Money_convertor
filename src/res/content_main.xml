@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fr.m2i.convertisseur.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@mipmap/money_png_25">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:text="USD"
+        android:layout_marginStart="75dp"
+        android:layout_below="@+id/TextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/txtEUR" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertisseur de Monnaies"
+        android:layout_alignEnd="@+id/txtUSD"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtUSD" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcul"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/txtEUR"
+        android:onClick="calculate"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quitter"
+        android:layout_marginTop="20dp"
+        android:onClick="quit"
+        android:layout_below="@+id/txtEUR"
+        android:layout_alignStart="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/txtUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtEUR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView2" />
+
+
+</RelativeLayout>
