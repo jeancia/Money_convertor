@@ -9,7 +9,7 @@ in a res, the file to configure the application with string, style, layout.
 
 # Preview :
 
-<img src = "https://image.noelshack.com/fichiers/2018/02/6/1515852325-preview.png" title = "previex" alt = "preview">
+<img src = "https://image.noelshack.com/fichiers/2018/02/6/1515852325-preview.png" title = "preview" alt = "preview">
 
 ## Jeancia author
 ## Licence MIT
