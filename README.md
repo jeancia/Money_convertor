@@ -2,7 +2,7 @@
 
 This is a source file of Android application.
 
-This is Application developed with Android studio. This application converted a money EUR/USD or USD/EUR.
+This is Application developed with Android studio. This application converted a money USD/EUR.
 
 in a main, the source code in java.
 in a res, the file to configure the application with string, style, layout.
